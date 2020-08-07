@@ -21,33 +21,14 @@ namespace Assignment_4
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ValuesTableLayoutPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void WeightTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void WeightLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void CalculateButton_Click(object sender, EventArgs e)
         {
+            string result1 = "            Underweight                      less than 18.5";
+            string result2 = "            Normal                           between 18.5 and 24.9";
+            string result3 = "            Overweight                       between 25 and 29.9";
+            string result4 = "            Obese                            30 or greater";
+
+
             if (HeightTextbox.Text != "" && WeightTextbox.Text != "")
             {
                 if (MetricRadioButton.Checked)
@@ -56,6 +37,25 @@ namespace Assignment_4
                     weight = Convert.ToDouble(WeightTextbox.Text);
                     bmi = (weight) / (height * height);
                     BMITextBox.Text = bmi.ToString("N2");
+                    if (bmi < 18.5)
+                    {
+                        ResultTextbox.Text = result1.ToString();
+                    }
+                    else if (bmi >= 18.5 && bmi < 24.9)
+                    {
+                        ResultTextbox.Text = result2.ToString();
+                    }
+                    else if (bmi >= 25 && bmi < 29.9)
+                    {
+                        ResultTextbox.Text = result3.ToString();
+                    }
+                    else
+                    {
+                        ResultTextbox.Text = result4.ToString();
+                    }
+                    BMIResultLabel.Show();
+                    BMIScaleLabel.Show();
+                    ResultTextbox.Show();
                 }
                 else
                 {
@@ -63,6 +63,25 @@ namespace Assignment_4
                     weight = Convert.ToDouble(WeightTextbox.Text);
                     bmi = (weight * 703) / (height * height);
                     BMITextBox.Text = bmi.ToString("N2");
+                    if (bmi < 18.5)
+                    {
+                        ResultTextbox.Text = result1.ToString();
+                    }
+                    else if (bmi >= 18.5 && bmi < 24.9)
+                    {
+                        ResultTextbox.Text = result2.ToString();
+                    }
+                    else if (bmi >= 25 && bmi < 29.9)
+                    {
+                        ResultTextbox.Text = result3.ToString();
+                    }
+                    else
+                    {
+                        ResultTextbox.Text = result4.ToString();
+                    }
+                    BMIResultLabel.Show();
+                    BMIScaleLabel.Show();
+                    ResultTextbox.Show();
                 }
             }
         }
@@ -89,11 +108,21 @@ namespace Assignment_4
             HeightTextbox.Text = "";
             WeightTextbox.Text = "";
             BMITextBox.Text = "";
+            BMIResultLabel.Hide();
+            BMIScaleLabel.Hide();
+            ResultTextbox.Hide();
         }
 
         private void BMICalculatorForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BMICalculatorForm_Load(object sender, EventArgs e)
+        {
+            BMIResultLabel.Hide();
+            BMIScaleLabel.Hide();
+            ResultTextbox.Hide();
         }
     }
 }

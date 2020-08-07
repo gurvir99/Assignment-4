@@ -60,7 +60,7 @@
             this.Controls.Add(this.SplashFormLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
             this.ResumeLayout(false);
