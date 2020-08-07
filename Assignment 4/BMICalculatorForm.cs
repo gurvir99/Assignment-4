@@ -12,6 +12,7 @@ namespace Assignment_4
 {
     public partial class BMICalculatorForm : Form
     {
+        //height, weight and bmi variables created.
         double height;
         double weight;
         double bmi;
@@ -23,6 +24,7 @@ namespace Assignment_4
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
+            //string messages to display for results created
             string result1 = "            Underweight                      less than 18.5";
             string result2 = "            Normal                           between 18.5 and 24.9";
             string result3 = "            Overweight                       between 25 and 29.9";
@@ -86,6 +88,7 @@ namespace Assignment_4
             }
         }
 
+        //methods to make the Height and Weight Textboxes accept only numbers
         private void HeightTextbox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
@@ -103,6 +106,7 @@ namespace Assignment_4
             }
         }
 
+        //method to reset the app by clicking on Reset button
         private void ResetButton_Click(object sender, EventArgs e)
         {
             HeightTextbox.Text = "";
@@ -118,6 +122,7 @@ namespace Assignment_4
             Application.Exit();
         }
 
+        //method to hide the BMIResultLabel, BMIScaleLabel and ResultTextbox when the form loads
         private void BMICalculatorForm_Load(object sender, EventArgs e)
         {
             BMIResultLabel.Hide();

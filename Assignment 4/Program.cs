@@ -20,6 +20,7 @@ namespace Assignment_4
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            //new Splashform and BMICalculatorForm object istantiated
             splashForm = new SplashForm();
             BMICalculatorForm = new BMICalculatorForm();
 

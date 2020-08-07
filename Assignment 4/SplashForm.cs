@@ -15,6 +15,7 @@ namespace Assignment_4
             InitializeComponent();
         }
 
+        //timer added to the splashform in order to close it after 3 seconds
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             Program.BMICalculatorForm.Show();

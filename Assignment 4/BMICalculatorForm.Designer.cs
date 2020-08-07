@@ -70,7 +70,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.99614F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 286F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 292F));
             this.tableLayoutPanel1.Controls.Add(this.ImperialLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.ImperialRadioButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.MetricRadioButton, 3, 0);
@@ -89,7 +89,7 @@
             this.ImperialLabel.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.ImperialLabel.Location = new System.Drawing.Point(3, 0);
             this.ImperialLabel.Name = "ImperialLabel";
-            this.ImperialLabel.Size = new System.Drawing.Size(141, 40);
+            this.ImperialLabel.Size = new System.Drawing.Size(137, 40);
             this.ImperialLabel.TabIndex = 0;
             this.ImperialLabel.Text = "Imperial";
             this.ImperialLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,7 +98,7 @@
             // 
             this.ImperialRadioButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ImperialRadioButton.Checked = true;
-            this.ImperialRadioButton.Location = new System.Drawing.Point(150, 3);
+            this.ImperialRadioButton.Location = new System.Drawing.Point(146, 3);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
             this.ImperialRadioButton.Size = new System.Drawing.Size(33, 34);
             this.ImperialRadioButton.TabIndex = 2;
@@ -109,7 +109,7 @@
             // MetricRadioButton
             // 
             this.MetricRadioButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.MetricRadioButton.Location = new System.Drawing.Point(251, 3);
+            this.MetricRadioButton.Location = new System.Drawing.Point(245, 3);
             this.MetricRadioButton.Name = "MetricRadioButton";
             this.MetricRadioButton.Size = new System.Drawing.Size(33, 35);
             this.MetricRadioButton.TabIndex = 3;
@@ -121,7 +121,7 @@
             this.MetricLable.BackColor = System.Drawing.Color.SandyBrown;
             this.MetricLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MetricLable.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.MetricLable.Location = new System.Drawing.Point(309, 0);
+            this.MetricLable.Location = new System.Drawing.Point(303, 0);
             this.MetricLable.Name = "MetricLable";
             this.MetricLable.Size = new System.Drawing.Size(160, 40);
             this.MetricLable.TabIndex = 1;
@@ -211,6 +211,7 @@
             // BMITextBox
             // 
             this.BMITextBox.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.BMITextBox.Enabled = false;
             this.BMITextBox.Location = new System.Drawing.Point(209, 324);
             this.BMITextBox.Name = "BMITextBox";
             this.BMITextBox.ReadOnly = true;
@@ -269,10 +270,13 @@
             // ResultTextbox
             // 
             this.ResultTextbox.BackColor = System.Drawing.SystemColors.Control;
+            this.ResultTextbox.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.ResultTextbox.Enabled = false;
             this.ResultTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ResultTextbox.Location = new System.Drawing.Point(88, 427);
             this.ResultTextbox.Multiline = true;
             this.ResultTextbox.Name = "ResultTextbox";
+            this.ResultTextbox.ReadOnly = true;
             this.ResultTextbox.Size = new System.Drawing.Size(472, 35);
             this.ResultTextbox.TabIndex = 8;
             // 
