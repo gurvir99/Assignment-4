@@ -8,6 +8,10 @@ using System.Windows.Forms;
 
 namespace Assignment_4
 {
+    //Student: Gurvir Singh #301108852
+    //Course: Programming 2 - COMP123001
+    //Semester: Summer 2020
+    //Date last modified: 2020-08-07
     public partial class SplashForm : Form
     {
         public SplashForm()
