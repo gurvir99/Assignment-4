@@ -66,8 +66,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.00386F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.99614F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.94872F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.05128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 292F));
@@ -89,7 +89,7 @@
             this.ImperialLabel.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.ImperialLabel.Location = new System.Drawing.Point(3, 0);
             this.ImperialLabel.Name = "ImperialLabel";
-            this.ImperialLabel.Size = new System.Drawing.Size(137, 40);
+            this.ImperialLabel.Size = new System.Drawing.Size(153, 40);
             this.ImperialLabel.TabIndex = 0;
             this.ImperialLabel.Text = "Imperial";
             this.ImperialLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,7 +98,7 @@
             // 
             this.ImperialRadioButton.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ImperialRadioButton.Checked = true;
-            this.ImperialRadioButton.Location = new System.Drawing.Point(146, 3);
+            this.ImperialRadioButton.Location = new System.Drawing.Point(162, 3);
             this.ImperialRadioButton.Name = "ImperialRadioButton";
             this.ImperialRadioButton.Size = new System.Drawing.Size(33, 34);
             this.ImperialRadioButton.TabIndex = 2;
